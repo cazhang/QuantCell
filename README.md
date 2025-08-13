@@ -146,6 +146,8 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 # 3. Install Python dependencies
 pip install -e .[ai,visualization,realtime,web]
 
+my: pip install -e ".[ai,visualization,realtime,web]"
+
 # 4. Build C++ backend (optional)
 cd backend
 mkdir build && cd build
